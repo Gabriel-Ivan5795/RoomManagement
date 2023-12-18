@@ -14,6 +14,7 @@
 		A12A537C2B2C9E91009C6A89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12A537A2B2C9E91009C6A89 /* Main.storyboard */; };
 		A12A537E2B2C9E93009C6A89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12A537D2B2C9E93009C6A89 /* Assets.xcassets */; };
 		A12A53812B2C9E93009C6A89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12A537F2B2C9E93009C6A89 /* LaunchScreen.storyboard */; };
+		A12A538D2B2CA0CF009C6A89 /* RowebTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = A12A538C2B2CA0CF009C6A89 /* RowebTemplate */; };
 		A12A53902B2CA1E3009C6A89 /* AppDelegate+Customisations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A538F2B2CA1E3009C6A89 /* AppDelegate+Customisations.swift */; };
 /* End PBXBuildFile section */
 
