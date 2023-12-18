@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCJ_DWyghxEILn2GSPspwC7iAPwblSihhw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>448956753237</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ivangabriel.HomeTemperatureApp</string>
+	<key>PROJECT_ID</key>
+	<string>ivan-s-residence</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ivan-s-residence.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:448956753237:ios:778267993058d76c4c7bdc</string>
+</dict>
+</plist>
