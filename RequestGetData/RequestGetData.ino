@@ -4,10 +4,16 @@
 
 #include <WiFi.h>
 #include <HTTPClient.h>
+#include <Firebase_ESP_Client.h>
 
 // Replace with your network credentials (STATION)
-const char* ssid = "DIGI-w5HE-2.4G";
-const char* password = "Nwzw94W4";
+// Bucharest
+// const char* ssid = "DIGI-w5HE-2.4G";
+// const char* password = "Nwzw94W4";
+
+//Oarja
+const char* ssid = "DIGI-ggc4";
+const char* password = "RUAutVwA";
 
 String serverName = "https://api.nasa.gov/planetary/apod?api_key=JclJYCz2wFMdWaOz3F6jPJLkbNpCpmZudYyyHrZv";
 String sensiboEndpoint = "https://home.sensibo.com/api/v2/pods/guHKtnvn/historicalMeasurements?apiKey=VCuPCe4p2xajYA4o9AaiL2SswbtgMa";
@@ -16,6 +22,11 @@ unsigned long lastTime = 0;
 //one day
 //unsigned long timerDelay = 86400000;
 unsigned long timerDelay = 10000;
+
+//Firebase Auth
+FirebaseAuth auth;
+//Firebase config
+FirebaseConfig config;
 
 void initWiFi() {
   WiFi.mode(WIFI_STA);
@@ -107,9 +118,17 @@ void setup() {
   Serial.print("RRSI: ");
   Serial.println(WiFi.RSSI());
   //createSensiboRequest();
+
+  auth.user.email = "gabriel.ivan5795@gmail.com";
+  auth.user.password = "GabrielResidence";
+
+  config.host = "ivan-s-residence.firebaseapp.com";
+  config.api_key = "AIzaSyBsoa37O5JuPzmWEncqvteq4Ze9mxwCnLE";
+
+  Firebase.begin(&config, &auth);
 }
 
 void loop() {
   createAPODRequest();
-  //createSensiboRequest();
+  createSensiboRequest();
 }
